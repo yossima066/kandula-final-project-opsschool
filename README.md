@@ -52,11 +52,11 @@
 
 Infrastructure Architecture Diagram
 
-(/PNG/2.png)
+![Inf](/PNG/2.png)
 
 Application and CI/CD flow diagram
 
-(/PNG/1.png)
+![App](/PNG/1.png)
 
 A small production environment for a highly available web application <a href="https://learn.hashicorp.com/tutorials/terraform/install-cli">(Kandula)</a> on AWS.
 
