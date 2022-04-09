@@ -8,7 +8,7 @@
 <div align="center">
   <a href="https://github.com/yossima066/kandula-final-project-opsschool.git">
 
-![Dumbo](/assets/d4c22a8b5f806a7a4cf3742ae6d3639e.gif)
+![Dumbo](/d4c22a8b5f806a7a4cf3742ae6d3639e.gif)
 
 <h3 align="center">OpsSchool Final Project</h3>
 
