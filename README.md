@@ -92,27 +92,14 @@ In order to set the environment you will need a linux machine with the following
    ```
 2. Set your AWS credentials as environment vars:
    <br />
+
    ```
    export AWS_ACCESS_KEY_ID=EXAMPLEACCESSKEY
    export AWS_SECRET_ACCESS_KEY=EXAMPLESECRETKEY
    export AWS_DEFAULT_REGION=us-east-1
    ```
-3. Use the example.tfvars file and enter the username and password that you wish to set for the RDS instance:
-   <br />
-   ```
-   # AWS
-   db_username             = "example"
-   db_password             = "example12345"
-   ```
-4. Optional: scan terraform's configuration files
-   for vulnerabilities with <a href="https://docs.snyk.io/snyk-cli/install-the-snyk-cli">snyk</a>:
-   <br />
-   ```
-   cd /OpssSchool-Final-Project
-   snyk auth
-   snyk iac test .
-   ```
-5. Optional: scan terraform's plan for vulnerabilities with <a href="https://docs.snyk.io/snyk-cli/install-the-snyk-cli">snyk</a>:
+
+3. Optional: scan terraform's plan for vulnerabilities with <a href="https://docs.snyk.io/snyk-cli/install-the-snyk-cli">snyk</a>:
    <br />
 
    ```
@@ -128,7 +115,7 @@ In order to set the environment you will need a linux machine with the following
    > Terraform's state for the S3 bucket will be saved locally on youre station.
    > <br />
 
-6. Create the infrastructure of the environemnt:
+4. Create the infrastructure of the environemnt:
    <br />
 
    ```
@@ -156,7 +143,7 @@ In order to set the environment you will need a linux machine with the following
    |EKS cluster | Cluster Name |
    <br />
 
-7. Set up Jenkins server - access the Jenkins UI and add the following credentials:
+5. Set up Jenkins server - access the Jenkins UI and add the following credentials:
    <br />
    | ID | Value | Description |
    |--------------------|--------------------|-------------|
@@ -166,13 +153,13 @@ In order to set the environment you will need a linux machine with the following
    | Slack | token | Slack token in order to set Slack notifications|
    | Postgres DB | username + password| The username and password for accessing the Postgres DB|
    <br />
-8. Kandula's App:
+6. Kandula's App:
    Clone the repository
    <br />
    ```
    git clone https://github.com/yossima066/kandula-project-app.git
    ```
-9. Deploy Kandula to K8s:
+7. Deploy Kandula to K8s:
    deploy-kandula-k8s: Docker build & push to DockerHub, apply a K8s Deployment, Service & HPA,
    then Kubernetes script:
 
@@ -184,12 +171,12 @@ In order to set the environment you will need a linux machine with the following
 
    <br />
 
-10. Clean up and destroy the environment:
-    ```
-    kubectl delete service kandula-project-lb
-    kubectl delete deploy kandula-final-project-deployment
-    terraform destroy -auto-approve -var-file=<file_name>.tfvars
-    ```
+8. Clean up and destroy the environment:
+   ```
+   kubectl delete service kandula-project-lb
+   kubectl delete deploy kandula-final-project-deployment
+   terraform destroy -auto-approve -var-file=<file_name>.tfvars
+   ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
